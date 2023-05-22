@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+  --Grayish_Blue: hsl(229, 8%, 60%);
+  --Very_Dark_Blue: hsl(229, 31%, 21%);
+  --Very_Dark_Blue_op: hsla(229, 31%, 21%, 0.9);
+  --Soft_Blue: hsl(231, 69%, 60%);
+  --Soft_Red: hsl(0, 94%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.navigationBar_desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+/*=============================================================
+********************Moblie navigation bar**********************
+===============================================================*/
+
+.navigationMenu {
+  display: none;
+}
+
+.navigationBar img {
+  display: none;
+}
+
+.active img {
+  display: block;
+}
+
+.active {
+  display: block;
+}
+
+.active {
+  background: var(--Very_Dark_Blue_op);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.active ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.active ul li:hover {
+  color: var(--Grayish_Blue);
+  transition: 0.3s;
+}
+
+.active ul hr {
+  width: 10rem;
+  border-color: var(--Grayish_Blue);
+}
+
+.active ul button {
+  width: 10rem;
+  height: 2.5rem;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.active ul button:hover {
+  background-color: white;
+  color: var(--Very_Dark_Blue);
+  border: none;
+  transition: 0.5s;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.social_icons img:hover {
+  transform: scale(1.5);
+  transition: all 0.3s linear;
+}
+
+/*=============================================================
+********************** hero (section:1) **********************
+===============================================================*/
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 50rem;
+  height: auto;
+}
+
+/* .hero::after{
+    content: "";
+    position: absolute;
+    right: -5rem;
+    bottom: 10rem;
+    width: 100%;
+    height: 40%;
+    background: hsl(231, 69%, 60%);
+    z-index: -1;
+    border-top-left-radius: 30% 50%;
+    border-bottom-left-radius: 30% 50%;
+} */
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-top: 8rem;
+  margin: 1.5rem;
+}
+
+.heroText h1 {
+  text-align: center;
+  color: var(--Very_Dark_Blue);
+}
+
+.heroText p {
+  text-align: center;
+  margin: 1rem 0rem;
+  color: var(--Grayish_Blue);
+}
+
+.download_btn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.download_btn button {
+  width: 9.5rem;
+  height: 2.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+}
+
+.download_btn :nth-child(1) {
+  background: var(--Soft_Blue);
+  color: white;
+}
+
+.download_btn :nth-child(1):hover {
+  border: 0.15rem solid var(--Soft_Blue);
+  background: transparent;
+  color: var(--Soft_Blue);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.download_btn :nth-child(2) {
+  box-shadow: 0 4px 6px -5px #222;
+}
+
+.download_btn :nth-child(2):hover {
+  border: 0.15rem solid var(--Very_Dark_Blue);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/*=============================================================
+****************** Features (section:2) **********************
+===============================================================*/
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+  padding-top: 8rem;
+  position: relative;
+}
+
+.features h2 {
+  color: var(--Very_Dark_Blue);
+}
+
+.features p {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: var(--Grayish_Blue);
+}
+
+.featuresMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+.featuresMenu ul a {
+  text-decoration: none;
+  color: var(--Very_Dark_Blue);
+}
+
+.featuresMenu ul a:hover {
+  cursor: pointer;
+}
+
+.visible {
+  border-bottom: 0.2rem solid var(--Soft_Red);
+  padding-bottom: 0.9rem;
+}
+
+.featuresMenu ul hr {
+  width: 12rem;
+}
+
+.featureBooking,
+.featureSearching,
+.featureSharing {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureBooking {
+  display: flex;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+}
+
+.illustrationText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.illustrationText h2 {
+  margin-top: 2rem;
+  color: var(--Very_Dark_Blue);
+}
+
+.illustrationText p {
+  color: var(--Grayish_Blue);
+  margin: 2rem 1.5rem;
+}
+
+.featureBooking button,
+.featureSearching button,
+.featureSharing button {
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background: var(--Soft_Blue);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.featureBooking button:hover,
+.featureSearching button:hover,
+.featureSharing button:hover {
+  border: 0.2rem solid var(--Soft_Blue);
+  color: var(--Soft_Blue);
+  background: transparent;
+  transition: all 0.5s;
+}
+
+/*=============================================================
+**************** Download the extension (section:3) ***********
+===============================================================*/
+
+.extension {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 1.5rem;
+}
+
+.extension h2 {
+  color: var(--Very_Dark_Blue);
+}
+
+.extensionText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.extensionText p {
+  text-align: center;
+  padding: 2rem 0rem;
+  margin-bottom: 3rem;
+}
+
+.extensionDownload {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.chrome,
+.firefox,
+.opera {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 20rem;
+  box-shadow: 0 0 0.6rem 0 hsl(228deg 4% 22% / 32%);
+  border-radius: 0.8rem;
+}
+
+.chrome:hover,
+.firefox:hover,
+.opera:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+.detaile h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--Very_Dark_Blue);
+}
+
+.detaile p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  color: var(--Grayish_Blue);
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn button {
+  width: 15rem;
+  height: 3.5rem;
+  margin-top: 1rem;
+  background: var(--Soft_Blue);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.btn button:hover {
+  border: 0.2rem solid var(--Soft_Blue);
+  background: transparent;
+  color: var(--Soft_Blue);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/*=============================================================
+************ Frequently Asked Questions (section:4) ************
+===============================================================*/
+
+.FAQsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.FAQs {
+  margin: 5rem 0rem;
+}
+
+.FAQs h2 {
+  text-align: center;
+  color: var(--Very_Dark_Blue);
+}
+
+.FAQs p {
+  text-align: center;
+  color: var(--Grayish_Blue);
+  margin-top: 2rem;
+}
+
+.questions {
+  max-width: 25rem;
+}
+
+.questions ul {
+  list-style: none;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 0.1rem solid var(--Grayish_Blue);
+}
+
+.text:hover {
+  cursor: pointer;
+}
+
+.text h4 {
+  padding: 1.5rem 0rem;
+  color: var(--Very_Dark_Blue);
+}
+
+.dropdownText {
+  display: none;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.FAQsContainer button {
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin: 3rem;
+  background: var(--Soft_Blue);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.FAQsContainer button:hover {
+  border: 0.2rem solid var(--Soft_Blue);
+  color: var(--Soft_Blue);
+  background: transparent;
+  transition: all 0.5s;
+}
+
+
+/*=============================================================
+***************** Contact form  (section:5) ********************
+===============================================================*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--Soft_Blue);
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+form h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+form h4 {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact button {
+  height: 2.5rem;
+  width: 15rem;
+  border: none;
+  outline: none;
+}
+
+.contact input {
+  border: 0.2rem solid var(--Soft_Red);
+  padding: 0.7rem 1rem;
+}
+
+.contact input:focus {
+  box-shadow: 0 0 10px var(--Soft_Red);
+}
+
+.contact button {
+  background: var(--Soft_Red);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+}
+
+.contact button:hover {
+  border: 0.2rem solid var(--Soft_Red);
+  background-color: white;
+  color: var(--Soft_Red);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.error img {
+  opacity: 0;
+}
+
+.error p {
+  opacity: 0;
+}
+
+.invalid img {
+  display: inline;
+  margin-left: 13rem;
+  position: absolute;
+  top: 50%;
+  opacity: 1;
+}
+
+.invalid p {
+  opacity: 1;
+  font-size: small;
+  background-color: var(--Soft_Red);
+  width: 15rem;
+  margin-bottom: 0.5rem;
+  padding: 0.1rem;
+  color: white;
+}
+
+/*=============================================================
+******************** Footer (section:6) ***********************
+===============================================================*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--Very_Dark_Blue);
+  padding: 2rem 0rem;
+  gap: 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: var(--Grayish_Blue);
+  text-transform: uppercase;
+}
+
+footer ul a:hover {
+  color: var(--Soft_Red);
+  transition: all 0.3s;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer div img:hover {
+  transform: scale(1.5);
+  transition: all 0.3s linear;
+}
+
+@media only screen and (min-width: 796px) {
+  .nav_btn {
+    display: none;
+  }
+
+  .navigationMenu {
+    display: block;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .navigationMenu ul hr {
+    display: none;
+  }
+
+  .navigationMenu ul {
+    display: flex;
+    gap: 3rem;
+    position: absolute;
+    top: 4.5rem;
+    right: 5rem;
+    height: 1.5rem;
+    list-style: none;
+    margin-left: 10rem;
+
+  }
+
+  .navigationMenu ul li:hover {
+    color: var(--Soft_Red);
+  }
+
+  .navigationMenu ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigationMenu ul li button {
+    border: none;
+    background: var(--Soft_Red);
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: bolder;
+    box-shadow: 0 4px 0.3rem 0 rgba(0, 0, 0, 0.247);
+    color: white;
+    cursor: pointer;
+
+  }
+
+  .navigationMenu ul li button:hover {
+    border: 2px solid var(--Soft_Red);
+    color: var(--Soft_Red);
+    background-color: white;
+  }
+
+  .intro {
+    display: flex;
+
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero2 img {
+    max-width: 30rem;
+    width: auto;
+    height: 100%;
+  }
+
+  .features {
+    margin: 0rem 8rem 0rem 8rem;
+  }
+
+  .featuresMenu ul {
+    flex-direction: row;
+    /* border-bottom: 1px solid hsla(229, 8%, 60%, 0.308);
+    padding: 1rem 2rem; */
+  }
+
+  .featuresMenu hr {
+    display: none;
+  }
+
+  .featureBooking {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0rem 8rem 0rem 8rem; */
+  }
+
+  .illustrationText p,
+  h2 {
+    text-align: left;
+  }
+
+  .extensionDownload {
+    flex-direction: row;
+  }
+
+  .chrome,
+  .firefox,
+  .opera {
+    width: 15rem;
+  }
+
+  .btn button {
+    width: 12rem;
+    height: 3rem;
+  }
+  .firefox {
+    margin-top: 3rem;
+  }
+  .opera {
+    margin-top: 6rem;
+  }
+  .btn img {
+    width: 14rem;
+  }
+
+}

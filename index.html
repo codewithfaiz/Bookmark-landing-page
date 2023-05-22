@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.2">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="navigationBar_desktop">
+      <img src="images/logo-bookmark.svg" alt="Logo">
+      <a href="#"><img class="nav_btn" src="images/icon-hamburger.svg" alt="menu_icon"></a>
+    </div>
+    <div class="navigationMenu">
+      <div class="navigationBar">
+        <div><img src="images/logo-navmark.svg" alt="Logo"></div>
+        <div><img src="./images/icon-close.svg" alt="menu_icon"></div>
+      </div>
+      <ul>
+        <hr>
+        <li>Features</li>
+        <hr>
+        <li>Pricing</li>
+        <hr>
+        <li>Contact</li>
+        <hr>
+        <li><button>Login</button></li>
+      </ul>
+      <div class="social_icons ">
+        <a href="#"><img src="images/icon-facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="intro">
+        <div class="hero">
+          <img src="images/illustration-hero.svg" alt="illustration">
+
+        </div>
+        <div class="heroText">
+          <h1>A Simple Bookmark Manager</h1>
+          <p> A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+          <div class="download_btn">
+            <button>Get it on Chrome</button>
+            <button>Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="hero2"><img src="images/illustration-hero.svg" alt="illustration"></div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+    **************************** Features ****************************
+    =============================================================== -->
+
+    <section>
+      <div class="features" id="feature">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite websites.
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+      <div class="featuresMenu ">
+        <ul>
+          <hr>
+          <li><a class="Booking visible">Simple Bookmarking</a></li>
+          <hr>
+          <li><a class="Searching "> Searching</a></li>
+          <hr>
+          <li><a class="Sharing ">Easy Sharing</a></li>
+          <hr>
+        </ul>
+        <div class="featuresTextContainer">
+          <div class="featureBooking">
+            <div class="illustration">
+              <img src="images/illustration-features-tab-1.svg" alt="illustration">
+            </div>
+
+            <div class="illustrationText">
+              <h2>Bookmark in one click</h2>
+              <p> Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites.</p>
+                <button>More Info</button>
+              </div>
+            
+          </div>
+          <div class="featureSearching">
+            <div class="illustration">
+              <img src="images/illustration-features-tab-2.svg" alt="illustration">
+            </div>
+            <div class="illustrationText">
+              <h2>Intelligent search</h2>
+              <p>Our powerful search feature will help you find saved sites in no time at all.
+                No need to trawl through all of your bookmarks.</p>
+            </div>
+            <button>More Info</button>
+          </div>
+          <div class="featureSharing">
+            <div class="illustration">
+              <img src="images/illustration-features-tab-3.svg" alt="illustration">
+            </div>
+            <div class="illustrationText">
+              <h2>Share your bookmarks</h2>
+              <p>Easily share your bookmarks and collections with others. Create a shareable
+                link that you can send at the click of a button.</p>
+            </div>
+            <button>More Info</button>
+          </div>
+        </div>
+    </section>
+
+    <!-- =============================================================
+    ******************** Download the extension **********************
+    =============================================================== -->
+
+    <section>
+      <div class="extension">
+        <div class="extensionText">
+          <h2>Download the extension</h2>
+          <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+            got a favourite you’d like us to prioritize.</p>
+        </div>
+          <div class="extensionDownload">
+            <div class="chrome">
+              <img src="images/logo-chrome.svg" alt="chrome">
+              <div class="detaile">
+                <h3>Add to Chrome</h3>
+                <p>Minimum version 62</p>
+              </div>
+              <div class="btn">
+                <img src="images/bg-dots.svg" alt="dot">
+                <button>Add & Install Extension</button>
+              </div>
+            </div>
+            <div class="firefox">
+              <img src="images/logo-firefox.svg" alt="firefox">
+              <div class="detaile">
+                <h3>Add to Firefox</h3>
+                <p>Minimum version 55</p>
+              </div>
+              <div class="btn">
+                <img src="images/bg-dots.svg" alt="dot">
+                <button>Add & Install Extension</button>
+              </div>
+            </div>
+            <div class="opera">
+              <img src="images/logo-opera.svg" alt="opera">
+              <div class="detaile">
+                <h3>Add to Opera</h3>
+                <p>Minimum version 46</p>
+              </div>
+              <div class="btn">
+                <img src="images/bg-dots.svg" alt="dot">
+                <button>Add & Install Extension</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+    ******************** Frequently Asked Questions **********************
+    =============================================================== -->
+
+    <section>
+      <div class="FAQsContainer">
+        <div class="FAQs">
+          <h2>Frequently Asked <br> Questions</h2>
+          <p>Here are some of our FAQs. If you have any other questions you’d like
+            answered please feel free to email us.</p>
+        </div>
+        <div class="questions">
+          <ul>
+            <li>
+              <div class="text">
+                <h4>What is Bookmark?</h4><img src="images/icon-arrow.svg" alt="">
+              </div>
+              <div class="dropdownText">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+              </div>
+            </li>
+            <li>
+              <div class="text">
+                <h4>How can I request a new browser?</h4><img src="images/icon-arrow.svg" alt="">
+              </div>
+              <div class="dropdownText">
+                <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+              </div>
+            </li>
+            <li>
+              <div class="text">
+                <h4>Is there a mobile app?</h4><img src="images/icon-arrow.svg" alt="">
+              </div>
+              <div class="dropdownText">
+                <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                  sollicitudin ex et ultricies bibendum.</p>
+              </div>
+            </li>
+            <li>
+              <div class="text">
+                <h4>What about other Chromium browsers?</h4><img src="images/icon-arrow.svg" alt="">
+              </div>
+              <div class="dropdownText">
+                <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                  vitae neque eget nisl gravida pellentesque non ut velit.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button> More Info</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============================================================
+  ******************** Contact form  **********************
+  =============================================================== -->
+
+  <form id="contact" action="" autocomplete="off" onsubmit="">
+    <h3>35,2+ already joined</h3>
+    <h4>Stay up-to-date with what <br> we’re doing</h4>
+    <div class="contact">
+      <div class="email">
+        <input type="text" class="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="error ">
+        <img src="images/icon-error.svg" alt="error">
+        <p><i>whoops, make sure it's an email</i></p>
+      </div>
+      <button type="submit">Contact Us</button>
+    </div>
+  </form>
+
+  <!-- =============================================================
+******************** Footer **********************
+=============================================================== -->
+
+  <footer>
+    <a href="#"><img src="images/logo-bookmark-white.svg" alt="Logo"></a>
+    <ul>
+      <li><a href="#freature">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div>
+      <img src="images/icon-facebook.svg" alt="facebook">
+      <img src="images/icon-twitter.svg" alt="twitter">
+    </div>
+  </footer>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+<script>
+
+
+
+  const nav_btn = document.querySelector('.nav_btn');
+  const navigationMenu = document.querySelector('.navigationMenu');
+
+  nav_btn.addEventListener('click', () => {
+    navigationMenu.classList.add('active');
+    nav_btn.style.opacity = "2";
+    navigationMenu.style.cursor = "pointer"
+  })
+  navigationMenu.addEventListener('click', () => {
+    navigationMenu.classList.remove('active');
+    nav_btn.style.opacity = "1";
+  });
+
+
+  const Bookingbtn = document.querySelector('.Booking');
+  const Searchingbtn = document.querySelector('.Searching');
+  const Sharingbtn = document.querySelector('.Sharing');
+  const BookingBox = document.querySelector('.featureBooking')
+  const SearchingBox = document.querySelector('.featureSearching')
+  const SharingBox = document.querySelector('.featureSharing')
+
+  Bookingbtn.addEventListener('click', () => {
+    BookingBox.style.display = "flex";
+    SearchingBox.style.display = "none";
+    SharingBox.style.display = "none";
+    Bookingbtn.classList.add("visible");
+    Searchingbtn.classList.remove("visible");
+    Sharingbtn.classList.remove("visible");
+  });
+  Searchingbtn.addEventListener('click', () => {
+    console.log('hello world')
+    BookingBox.style.display = "none";
+    SearchingBox.style.display = "flex";
+    SharingBox.style.display = "none";
+    Bookingbtn.classList.remove("visible");
+    Searchingbtn.classList.add("visible");
+    Sharingbtn.classList.remove("visible");
+  })
+  Sharingbtn.addEventListener('click', () => {
+    console.log('hello world')
+    BookingBox.style.display = "none";
+    SearchingBox.style.display = "none";
+    SharingBox.style.display = "flex";
+    Bookingbtn.classList.remove("visible");
+    Searchingbtn.classList.remove("visible");
+    Sharingbtn.classList.add("visible");
+
+  });
+
+  const questionbtn = document.querySelectorAll('.text');
+  const dropdowbtext = document.querySelectorAll('.dropdownText');
+
+
+  questionbtn[0].onclick = function () {
+    if (dropdowbtext[0].style.display == "none") {
+      dropdowbtext[0].style.display = "block";
+      questionbtn[0].classList.toggle('show');
+    }
+    else {
+      dropdowbtext[0].style.display = "none";
+    }
+  }
+  questionbtn[1].onclick = function () {
+    if (dropdowbtext[1].style.display == "none") {
+      dropdowbtext[1].style.display = "block";
+    }
+    else {
+      dropdowbtext[1].style.display = "none";
+    }
+  }
+  questionbtn[2].onclick = function () {
+    if (dropdowbtext[2].style.display == "none") {
+      dropdowbtext[2].style.display = "block";
+    }
+    else {
+      dropdowbtext[2].style.display = "none";
+    }
+  }
+  questionbtn[3].onclick = function () {
+    if (dropdowbtext[3].style.display == "none") {
+      dropdowbtext[3].style.display = "block";
+    }
+    else {
+      dropdowbtext[3].style.display = "none";
+    }
+  }
+
+  const email = document.querySelector('.email');
+  const error = document.querySelector('.error');
+  const form = document.getElementById('contact');
+  form.addEventListener('submit', () => {
+    let pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (email.value.match(pattern)) {
+      alert("hello world")
+      error.classList.remove('invalid')
+    } else {
+      error.classList.add('invalid')
+      alert("Please provide a valid email address")
+    }
+  })
+
+</script>
+
+</html>
